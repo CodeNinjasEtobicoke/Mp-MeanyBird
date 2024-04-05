@@ -6,19 +6,20 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     [Header("Default Score")]
-    public int score = 0;
-    [Header("Text Object for Displaying Score")]
-    public Text scoreText;
+    public static int score = 0;
 
     public void Start()
     {
-        scoreText.text = "Score: " + score.ToString();
+        score = 0;
     }
 
+    public void Update()
+    {
+        GetComponent<UnityEngine.UI.Text>().text = score.ToString();
+    }
 
     public void AddScore(int points)
     {
-        score = score + points;
-        scoreText.text = "Score: " + score.ToString();
+
     }
 }

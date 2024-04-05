@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyAfterTime : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,4 +16,3 @@ public class DestroyAfterTime : MonoBehaviour
 
     }
 }
-
